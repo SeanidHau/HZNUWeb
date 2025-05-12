@@ -9,7 +9,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.9);
+    background: rgba(150, 150, 150, 0.9);
     z-index: 1000;
 }
 
@@ -20,7 +20,7 @@ header {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(to bottom, #2b4f92, #2a5298);
+    background: linear-gradient(to bottom, #2b4f92, #f0f0f0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ header {
 
 .projects {
     padding: 60px 20px;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     color: #000000;
 }
 
