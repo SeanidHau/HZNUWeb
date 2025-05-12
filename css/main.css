@@ -9,7 +9,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(233, 233, 233);
+    background: rgba(255, 255, 255);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
@@ -92,9 +92,13 @@ header {
 .project-card {
     background-color: #f8f9fa;
     border: none;
-    border-radius: 10px;
+    border-radius: 18px;
     overflow: hidden;
     transition: transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -107,7 +111,11 @@ header {
 }
 
 .project-card-body {
-    padding: 20px;
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 footer {
@@ -133,4 +141,13 @@ footer {
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2833,33,33,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.social-icon i {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icon i:hover {
+  color: rgb(43, 79, 146);
 }
