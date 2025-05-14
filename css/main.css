@@ -154,13 +154,15 @@ footer {
 
 .login-card {
   display: flex;
-  width: 800px;
-  height: 500px;
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 540px;
+  max-width: 90vw;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 .login-left {
@@ -192,6 +194,14 @@ footer {
   margin-bottom: 25px;
   text-align: start;
   color: #333;
+}
+
+.login-right .subtitle {
+  text-align: start;
+  font-size: 14px;
+  color: #777;
+  margin-top: -15px;
+  margin-bottom: 25px;
 }
 
 .login-right input[type="text"],
@@ -267,6 +277,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 100px;
+    justify-content: center;
+    padding: 100px 20px 40px;
+    box-sizing: border-box;
 }
