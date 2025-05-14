@@ -271,6 +271,153 @@ footer {
     text-decoration: underline;
 }
 
+.register-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  max-width: 90vw;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.register-card h2 {
+  font-weight: 450;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.register-card .subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.register-card input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-card .verify-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.register-card .verify-group input {
+  flex: 1;
+  height: 44px;
+  padding: 12px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: auto;
+}
+
+.register-card .verify-btn {
+  height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  vertical-align: middle;
+  margin-top: 0;
+}
+
+.register-card .verify-btn:hover {
+  background-color: rgb(43, 79, 146);
+}
+
+.register-card button {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-card button:hover {
+  background-color: rgb(43, 79, 146);
+}
+
+.register-card .password-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.password-group input {
+  flex: 1;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.password-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-card .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.register-card .divider::before,
+.register-card .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
 .pages {
     background: linear-gradient(to bottom, rgba(43, 79, 146, 1), rgba(233, 233, 233, 0.6));
     min-height: 100vh;

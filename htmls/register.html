@@ -30,8 +30,44 @@
                 <button class="btn btn-dark">注册</button>
             </div>
         </header>
+
+        <div class="register-card">
+            <div class="register-form">
+                <h2>欢迎注册</h2>
+                <p class="subtitle">开启你的飞行预约体验</p>
+                <form action="/api/register" method="POST">
+                    <input type="text" name="username" placeholder="请输入用户名" required>
+                    <input type="email-or-phone" name="email-or-phone" placeholder="请输入邮箱/手机号" required>
+                    <div class="verify-group">
+                        <input type="text" name="code" placeholder="请输入验证码" required>
+                        <button type="button" class="verify-btn" onclick="sendCode(this)">获取验证码</button>
+                    </div>
+                    <div class="password-group">
+                        <input type="password" name="password" placeholder="请输入密码" required>
+                        <input type="password" name="confirm_password" placeholder="请确认密码" required>
+                    </div>
+
+                    <button type="submit">注册</button>
+                </form>
+                <div class="login-register">
+                    <p>已有账号？<a href="./login.html">立即登录</a></p>
+                </div>
+                <div class="social-login">
+                    <div class="divider">
+                        <span>或通过以下方式注册</span>
+                    </div>
+                    <button class="btn btn-outline-primary"><i class="fab fa-weixin"></i> 微信注册</button>
+                    <button class="btn btn-outline-secondary"><i class="fab fa-qq"></i> QQ注册</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+
+    <footer>
+        <p>© 2025 低空飞行体验预约系统 | 联系我们: seanid4132@gmail.com</p>
+    </footer>
 
 
     <!-- Bootstrap JS & jQuery -->
