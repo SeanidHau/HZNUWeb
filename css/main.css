@@ -1,117 +1,117 @@
 ﻿body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #0a0a0a;
-    color: #ffffff;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-    color: white;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+  overflow: hidden;
 
-    background: 
-      linear-gradient(to bottom, rgba(43, 79, 146, 0.6), rgba(233, 233, 233, 0.6)),
-      url('../img/hero-background.png') center center / cover no-repeat;
+  background:
+    linear-gradient(to bottom, rgba(43, 79, 146, 0.6), rgba(233, 233, 233, 0.6)),
+    url('../img/hero-background.png') center center / cover no-repeat;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-.hero > * {
-    position: relative;
-    z-index: 2;
+.hero>* {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .hero-box {
-    background-color: rgba(43, 79, 146, 0.8);
-    padding: 8rem 5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    max-width: 700px;
-    margin: 0 auto;
+  background-color: rgba(43, 79, 146, 0.8);
+  padding: 8rem 5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .hero-box h1,
 .hero-box p {
-    color: #ffffff
+  color: #ffffff
 }
 
 .hero-btn {
-    color: white;
-    border: 2px solid white;
-    transition: all 0.3s ease;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: white;
-    color: #1e50b4;
+  background-color: white;
+  color: #1e50b4;
 }
 
 .projects {
-    padding: 60px 20px;
-    background-color: #e9e9e9;
-    color: #000000;
+  padding: 60px 20px;
+  background-color: #e9e9e9;
+  color: #000000;
 }
 
 .project-card {
-    background-color: #f8f9fa;
-    border: none;
-    border-radius: 18px;
-    overflow: hidden;
-    transition: transform 0.3s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .project-card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .project-card-body {
-    flex: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -119,10 +119,10 @@ header {
 }
 
 footer {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
 }
 
 .custom-navbar {
@@ -139,6 +139,7 @@ footer {
 .navbar-toggler {
   border: none;
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2833,33,33,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -260,15 +261,15 @@ footer {
 }
 
 .login-register {
-    text-align: left;
-    margin-top:  25px;
-    font-size: 14px;
+  text-align: left;
+  margin-top: 25px;
+  font-size: 14px;
 }
 
 .login-register a {
-    color: #333;
-    font-weight: bold;
-    text-decoration: underline;
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .register-card {
@@ -529,7 +530,7 @@ footer {
   padding: 16px 20px;
   margin-bottom: 12px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   color: #333;
   font-size: 15px;
   width: 100%;
@@ -597,7 +598,7 @@ footer {
   margin: 20px;
   margin-top: -4px;
   padding: 16px;
-  
+
   background: #f9f9f9;
   display: flex;
   justify-content: space-between;
@@ -618,13 +619,63 @@ footer {
   cursor: pointer;
 }
 
-.pages {
-    background: linear-gradient(to bottom, rgba(43, 79, 146, 1), rgba(233, 233, 233, 0.6));
-    min-height: 100vh;
+.card.projects-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card.projects-image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.feedback-form {
+  width: 75%;
+  max-width: 100%;
+  margin: 1rem;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating-stars {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 20px 40px;
-    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-stars input {
+    display: none;
+}
+
+.rating-stars label {
+    font-size: 25px;
+    color: #ddd;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+    color: #ffd700;
+}
+
+.pages {
+  background: linear-gradient(to bottom, rgba(43, 79, 146, 1), rgba(233, 233, 233, 0.6));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 40px;
+  box-sizing: border-box;
 }

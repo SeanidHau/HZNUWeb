@@ -28,34 +28,40 @@
             </div>
         </header>
 
-        <div class="personal-card">
-            <div class="profile-left">
-                <img src="../img/avatar.png" alt="头像">
-                <div class="profile-info">
-                    <h4>seanid</h4>
-                    <p>邮箱：user@example.com</p>
-                    <p>手机号：13800000000</p>
+        <div class="feedback-form">
+            <h3 class="text-center mb-4">飞行体验反馈</h3>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="project">项目名称</label>
+                    <h5>
+                        <P>热气球飞行体验</P>
+                    </h5>
                 </div>
 
-                <div class="profile-actions">
-                    <a href="edit-profile.html"><i class="fas fa-edit"></i>修改个人信息</a>
+                <div class="form-group">
+                    <label>评分</label>
+                    <div class="rating-stars">
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                    </div>
                 </div>
 
-                <div class="logout">
-                    <button class="btn btn-dark" onclick="logout()">退出登录</button>
-                </div>
-            </div>
-
-            <div class="profile-right">
-                <div class="appointments">
-                    <h3>近期预约</h3>
-                    <div class="appointment-item">直升机环城飞行 - 2025-06-12 14:00 - 2人</div>
-                    <div class="appointment-item">动力滑翔伞体验 - 2025-06-20 09:00 - 1人</div>
+                <div class="form-group">
+                    <label for="comments">评价内容</label>
+                    <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="请填写您的详细评价..."
+                        required></textarea>
                 </div>
 
-                <div class="profile-actions"></div>
-                <a href="orders.html"><i class="fas fa-arrow-right"></i>查看更多预约</a>
-            </div>
+                <div class="form-group">
+                    <label for="photo">上传照片（可选）</label>
+                    <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn btn-dark btn-block">提交反馈</button>
+            </form>
         </div>
     </div>
 
