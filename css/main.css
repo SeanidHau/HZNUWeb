@@ -535,6 +535,89 @@ footer {
   width: 100%;
 }
 
+.orders-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 90vw;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+}
+
+.order-header {
+  align-self: flex-start;
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.order-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #333;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-card .order-filter {
+  align-self: start;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.orders-card .filter-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.orders-card .filter-btn.active {
+  background-color: #333;
+  color: white;
+}
+
+.order-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  margin-top: -4px;
+  padding: 16px;
+  
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-info p {
+  margin: 4px 0;
+}
+
+.order-actions .btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .pages {
     background: linear-gradient(to bottom, rgba(43, 79, 146, 1), rgba(233, 233, 233, 0.6));
     min-height: 100vh;
