@@ -418,6 +418,123 @@ footer {
   margin: 0 10px;
 }
 
+.personal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 540px;
+  max-width: 90vw;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  flex-direction: row;
+}
+
+.profile-left {
+  width: 50%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-left h2 {
+  font-weight: 450;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.profile-left .subtitle {
+  text-align: start;
+  font-size: 14px;
+  color: #777;
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+
+.profile-left img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 2px solid #eee;
+}
+
+.profile-left a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-left button {
+  margin-top: 1rem;
+}
+
+.personal-card::before {
+  content: "";
+  width: 1px;
+  background-color: #ccc;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.personal-card {
+  position: relative;
+}
+
+.profile-right {
+  width: 50%;
+  height: 100%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid #e0e0e0;
+}
+
+.profile-right h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-right a {
+  align-self: flex-end;
+  margin-top: auto;
+  text-decoration: underline;
+  transition: color 0.3s;
+  text-align: right;
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.appointments {
+  height: 100%;
+}
+
+.appointment-item {
+  background-color: #fff;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  color: #333;
+  font-size: 15px;
+  width: 100%;
+}
+
 .pages {
     background: linear-gradient(to bottom, rgba(43, 79, 146, 1), rgba(233, 233, 233, 0.6));
     min-height: 100vh;
